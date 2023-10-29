@@ -7,8 +7,6 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
   width: 100vw;
   background-color: var(--cream);
   font-size: 14px;
@@ -17,9 +15,6 @@ body {
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   margin-top: 10%;
   width: 600px;
   height: 450px;
@@ -85,6 +80,7 @@ main {
 
 .conteudo__tipo {
   color: var(--dark-grayish-blue);
+  letter-spacing: 6px;
 }
 
 .conteudo__titulo {
@@ -100,6 +96,7 @@ main {
   font-size: 2rem;
   color: var(--dark-cyan);
   font-family: "Fraunces", serif;
+  gap: .5rem;
 }
 
 .conteudo__preco span {
