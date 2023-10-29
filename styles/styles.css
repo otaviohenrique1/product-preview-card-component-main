@@ -149,4 +149,12 @@ main {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
   }
+
+  .conteudo__titulo {
+    font-size: 1.5rem;
+  }
+
+  .conteudo__paragrafo {
+    font-size: .8rem;
+  }
 }
