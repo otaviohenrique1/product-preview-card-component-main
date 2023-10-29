@@ -11,6 +11,7 @@ body {
   justify-content: center;
   width: 100vw;
   background-color: var(--cream);
+  font-size: 14px;
 }
 
 main {
@@ -20,6 +21,10 @@ main {
   margin-top: 10%;
   width: 600px;
   height: 450px;
+}
+
+.w-80 {
+  width: 80%;
 }
 
 .imagem {
@@ -39,6 +44,42 @@ main {
   background-color: var(--white);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.conteudo__preco {
+  font-size: 2rem;
+  color: var(--dark-cyan);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.conteudo__preco span {
+  color: var(--dark-grayish-blue);
+  font-size: 1rem;
+  text-decoration: solid var(--dark-grayish-blue) line-through;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.conteudo__botao {
+  background-color: var(--dark-cyan);
+  border: 0;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: .5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.conteudo__botao:hover {
+  filter: brightness(75%);
 }
 
 @media screen and (max-width: 600px) {
