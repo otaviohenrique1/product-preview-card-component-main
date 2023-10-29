@@ -12,6 +12,8 @@ body {
   width: 100vw;
   background-color: var(--cream);
   font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+
 }
 
 main {
@@ -23,14 +25,51 @@ main {
   height: 450px;
 }
 
-.w-80 {
+.width-80 {
   width: 80%;
 }
 
-.imagem {
+.width-50 {
   width: 50%;
+}
+
+.height-100 {
   height: 100%;
-  background-color: black;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.imagem {
   background-image: url(../images/image-product-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,22 +78,28 @@ main {
 }
 
 .conteudo {
-  width: 50%;
-  height: 100%;
   background-color: var(--white);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+}
+
+.conteudo__tipo {
+  color: var(--dark-grayish-blue);
+}
+
+.conteudo__titulo {
+  font-size: 2rem;
+  color: var(--very-dark-blue);
+}
+
+.conteudo__paragrafo {
+  color: var(--dark-grayish-blue);
 }
 
 .conteudo__preco {
   font-size: 2rem;
   color: var(--dark-cyan);
   font-family: "Fraunces", serif;
-  font-weight: 700;
 }
 
 .conteudo__preco span {
@@ -62,20 +107,17 @@ main {
   font-size: 1rem;
   text-decoration: solid var(--dark-grayish-blue) line-through;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
 }
 
 .conteudo__botao {
   background-color: var(--dark-cyan);
   border: 0;
   color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1rem;
   gap: .5rem;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .conteudo__botao:hover {
@@ -96,8 +138,6 @@ main {
 
   .imagem {
     background-image: url(../images/image-product-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 240px;
     width: 100%;
     border-top-right-radius: 20px;
