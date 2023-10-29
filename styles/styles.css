@@ -10,6 +10,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100vw;
+  background-color: var(--cream);
 }
 
 main {
@@ -25,11 +26,19 @@ main {
   width: 50%;
   height: 100%;
   background-color: black;
+  background-image: url(../images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .conteudo {
   width: 50%;
   height: 100%;
+  background-color: var(--white);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -44,13 +53,22 @@ main {
     width: 344px;
   }
 
+  .imagem {
+    background-image: url(../images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+  
   .conteudo {
     height: 370px;
     width: 100%;
-  }
-
-  .imagem {
-    height: 240px;
-    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 }
